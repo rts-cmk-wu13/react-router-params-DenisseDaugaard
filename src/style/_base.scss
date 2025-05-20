@@ -1,0 +1,36 @@
+@use '/src/style/variables' as var;
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/public/fonts/Lato-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato';
+    background-color: var.$background-color;
+}
+
+.main__btn{
+    background-color: var.$main-color;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    width: 100%;
+    margin: 1rem;
+    align-self: center;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}

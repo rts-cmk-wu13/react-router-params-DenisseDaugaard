@@ -1,0 +1,11 @@
+@use '/src/style/variables' as var;
+
+.home{
+    .header{
+        text-align: center;
+       p{
+        color:var.$text-color;
+       }
+    }
+
+}
