@@ -3,6 +3,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import '/src/style/style.scss'
 
 import Home from './pages/Home'
+import MyPets from './pages/My_pets'
+import Details from './pages/Deatails'
 
 
 
@@ -15,11 +17,11 @@ function App() {
     },
     {
        path:"my-pets",
-      //  element: <MyPets/>
+       element: <MyPets/>
     },
     {
-       path:"pet-info",
-      //  element: <Pet-info/>
+       path:"my-pets/:id",
+       element: <Details/>
     }
     
   ])

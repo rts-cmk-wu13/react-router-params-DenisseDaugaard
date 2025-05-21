@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 import Button from "./components/Button"
 
 export default function Home(){
@@ -11,9 +12,11 @@ export default function Home(){
                 <h1>My Pets</h1>
                 <p>Taking care of a pet is my favorite, it helps me to gaimr stress and fatigue.</p>
             </section>
-           <Button
-           text="Skip"
-           />
+          
+           <Link to="my-pets">
+            <button className="main__btn">Skip</button>
+           </Link>
+           
         </article>
     )
 }
